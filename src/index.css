@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: minmax(12vh, auto);
+}
+
+.menu-icon {
+  zoom: 1.5;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px silver;
+}
+
+.phone-icon {
+  zoom: 2;
+}
+
+.explore-icon {
+  color: #380675;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.explore-icon:hover {
+  transform: rotate(50deg);
+}
+
+.social-icon {
+  cursor: pointer;
+  zoom: 1.5;
+}
+
+.social-icon:hover {
+  color: #984ff1;
+  transform: rotate(20deg);
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  zoom: 2;
+  background-color: #984ff1;
+  border: none;
+  min-width: 2vw;
+  cursor: pointer;
+}
+
+.backToTop:hover {
+  box-shadow: 15px 0px 5px rgb(241, 38, 72) inset;
+}
+
+.therapist-icon {
+  zoom: 3;
+  color: rgb(241, 38, 72);
+}
+
+.ul {
+  list-style: none; /* Remove default bullets */
+  padding: 20px;
+}
+
+.ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: orangered; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  zoom: 1.2;
+}
+
+.ul li {
+  margin: 10px;
+}
